@@ -1,0 +1,53 @@
+{
+  "name": "javascript-starter",
+  "version": "0.0.1",
+  "description": "A starter kit for building web projects with modern JavaScript",
+  "author": {
+    "name": "Miguel Molina",
+    "email": "miguelmolina.tk@gmail.com",
+    "url": "https://miguel-molina.com"
+  },
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "format": "prettier --write src/**/*.{js,json,md}",
+    "build": "npm run clean && parcel build src/index.html --no-minify --no-source-maps",
+    "start": "parcel -p 8080 --hmr-port 8081 src/index.html --open"
+  },
+  "keywords": [
+    "javascript",
+    "eslint",
+    "prettier",
+    "parcel",
+    "es6",
+    "babel",
+    "boilerplate",
+    "starter",
+    "postcss",
+    "vscode"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "parcel": "^1.12.4",
+    "postcss-modules": "^4.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {
+    "posthtml-custom-elements": "^1.1.2",
+    "posthtml-extend-attrs": "^1.0.0",
+    "posthtml-insert-at": "^0.2.7",
+    "posthtml-to-svg-tags": "0.0.0"
+  }
+}

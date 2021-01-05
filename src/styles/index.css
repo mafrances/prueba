@@ -1,0 +1,91 @@
+/* @custom-media --viewport-medium (width <= 50rem); */
+/* @custom-selector :--heading h1, h2, h3, h4, h5, h6; */
+
+:root {
+  --mainColor: #12345678;
+}
+
+body {
+  color: var(--mainColor);
+  font-family: system-ui;
+  overflow-wrap: break-word;
+}
+
+:root {
+  --mainColor: rgba(18, 52, 86, 0.47059);
+}
+
+body {
+  color: rgba(18, 52, 86, 0.47059);
+  color: var(--mainColor);
+  font-family: Roboto, Oxygen, Droid Sans, Helvetica Neue;
+  word-wrap: break-word;
+
+  & #root {
+    color: rebeccapurple;
+  }
+}
+
+.component{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 50rem) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: rgba(0, 0, 255, 0.9);
+}
+
+a:hover {
+  color: #639;
+}
+
+td{
+  width:40px;
+  border: 1px solid black;
+  height:18px;
+  font-weight: bolder;
+  text-align: center; 
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+input.error {
+  border-color: red;
+}
+
+.title{
+  font-weight: bold;
+  color: black;
+}
+
+.form-div{
+  margin: 5px;
+}
+
+.text{
+  margin-right: 5px;
+  color: black;
+}
+
+.return-start{
+  float: right;
+}
+
+.play-again{
+  float: right;
+}
